@@ -1,13 +1,20 @@
 h1 {
   text-align: center;
   color: #fff;
+ 
 
 }
 
+
+#name-two,#name-one , #player1 ,#player2 {
+  color: #fff;
+
+}
+
+
 .grid-items {
-  width: 336px;
+  width: 50%;
   height: 336px;
-  margin: 0 auto;
   background-color: #34495e;
   color: #fff;
   border: 6px solid #2c3e50;
@@ -35,19 +42,12 @@ body {
   text-align: center;
 }
 
-#name-one,
-#name-two,
-#player1,
-#player2,
-#X,
-#O {
-  color: #fff;
+#X, #O  {
+  color: #80dfff ;
 }
 
-table {
-  border-collapse: collapse;
 
-}
+
 
 
 body {
@@ -55,19 +55,15 @@ body {
   font-family: Tahoma, Helvetica, sans-serif;
 }
 
-table {
-  position: absolute;
-  top: 70px;
-  right: 150px;
-  border: 6px solid #2c3e50;
-  border-radius: 2px;
-  font-family: Helvetica;
-  /* font-weight: bold; */
-  display: flex;
-  justify-content: center;
+.container{
+ display : flex;
+ justify-content: center;
+ flex-direction: column;
   align-items: center;
-
 }
+
+
+
 
 table td {
   border: 6px solid #2c3e50;
@@ -79,25 +75,43 @@ table td {
   border-width: 1px 1px 0 0;
 }
 
-
-table td {
-  width: 100px;
-  height: 50px;
-  display: inline-block;
+table body{
 
 }
 
+table {
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+   
+}
 
-@media only screen and (max-width:620px) {
 
-  body {
+tbody {
+  display: flex;
+}
+
+@media  (max-width:700px){
+  
+  .grid-items{
     width: 100%;
+    height: 416px;
   }
-
-  footer {
-    display: grid;
-
+  table {
+    margin-top: 40px;
   }
-
-
+  table tbody tr {
+    margin-right: 10px;
+  } 
+  table td{
+    border: 0px solid #2c3e50;
+  }
+  tbody{
+    display: flex;
+  }
 }
+
