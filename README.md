@@ -4,18 +4,33 @@
 
 # project tic tac toe game
 it's a game with two players 
+the winner who can 
 <!-- # = h1
 ## = h2 -->
 ## My Project Deployment
+
+ https://zenaalma.github.io/project-1/
 
 
 ## Technologies used in the project
 <!-- unorderlist -->
 * js
 * jquery
-- front end
 * html
 * CSS
+* sweet alert
+```
+Swal.fire({
+            title: "WELCOME TO TIC TAC TOE",
+            text: "Write The Player X Name (:",
+            input: 'text'
+```
+* animated.css
+```
+<h1 class="animated infinite pulse">Tic Tac Toe</h1>
+```
+
+* stealing the background color from another tic tac toe game (sorry)
 
 
 ## Planning and Development Process
@@ -37,17 +52,36 @@ it's a game with two players
 
 ---
 
-### Rest functon
-<!-- write the name of the languages -->
-```js
-let num1
-const name ="salman";
-console.log(name)
-```
- # Describe any lines or function in the code
-```js
-```
 ## Challenges
+the most challenging part was counting how many times the players win
+```
+ if (players[0] === players[1] && players[1] === players[2] && players[2] != "") {
+                    // alert("you win") 
+                    if (players[0] === "X") {
+                        player1 = player1 + 1
+                    } else {
+                        player2 = player2 + 1
+                    }
+                    // console.log(`player1 : ${player1}, player2: ${player2}`)
+                    $("#player1").text(player1)
+                    $("#player2").text(player2)
 
+                    setTimeout(function () {
+                        Swal.fire(
+                            'Good job!',
+                            'Player ' + players[0] + ' is the winner',
+                            'success',
 
-# Unsolved problems which would be fixed in future iterations.
+                        )
+                        console.log(coun)
+                        rest()
+
+                    }, 500)
+
+```
+ ---
+
+# Unsolved problems which would be fixed in future iterations
+
+the next virsion will be an online game so two people in different places can play with
+each other

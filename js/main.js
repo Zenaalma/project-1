@@ -30,7 +30,7 @@
 
         Swal.fire({
             title: "WELCOME TO TIC TAC TOE",
-            text: "Write Your Name (:",
+            text: "Write The Player X Name (:",
             input: 'text'
         }).then(function (result) {
             if (result.value) {
@@ -41,7 +41,7 @@
 
                 Swal.fire({
                     title: "WELCOME TO TIC TAC TOE",
-                    text: "Write Your Name (:",
+                    text: "Write The Player O Name (:",
                     input: 'text'
                 }).then(function (result) {
                     if (result.value) {
